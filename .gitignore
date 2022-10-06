@@ -11,6 +11,10 @@
 # production
 /build
 
+GDSCWork
+/GDSCWork
+./GDSCWork
+
 # misc
 .DS_Store
 .env.local

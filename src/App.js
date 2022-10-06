@@ -11,11 +11,10 @@ function App() {
       {/* <Pagination/> */}
       {/* <MainSearch/> */}
       {/* <ChartJs/> */}
-      {/* <Tracks/> */}
-      
-      <DataProvider>
+      <Tracks/>
+      {/* <DataProvider>
         <FunctionalComp />
-      </DataProvider>
+      </DataProvider> */}
     </>
   );
 }
