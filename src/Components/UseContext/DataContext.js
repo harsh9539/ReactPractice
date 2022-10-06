@@ -12,6 +12,7 @@ const DataProvider = ({ children }) => {
     function toggleTheme() {
         setDarkTheme(prevDarkTheme => !prevDarkTheme)
     }
+    
     return (
         <div style={{ padding: 50 }}>
             <DataContext.Provider value={darkTheme}>

@@ -10,7 +10,6 @@ const FunctionalComp = () => {
         margin: '2rem'
     }
 
-
     return (
         <>
             <button onClick={toggleTheme}>toggleTheme</button>

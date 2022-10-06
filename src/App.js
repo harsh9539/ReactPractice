@@ -12,6 +12,7 @@ function App() {
       {/* <MainSearch/> */}
       {/* <ChartJs/> */}
       {/* <Tracks/> */}
+      
       <DataProvider>
         <FunctionalComp />
       </DataProvider>
