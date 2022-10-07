@@ -6,6 +6,7 @@
 // import DataProvider from "./Components/UseContext/DataContext";
 import CompLogin from "./Components/Login/CompLogin";
 import LoginProvider from "./Components/Login/LoginContext";
+import PageRedux from "./Components/Redux/PageRedux";
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
       {/* <DataProvider>
         <FunctionalComp />
       </DataProvider> */}
-      <LoginProvider>
+      {/* <LoginProvider>
         <CompLogin />
-      </LoginProvider>
+      </LoginProvider> */}
+      <PageRedux/>
     </>
   );
 }
