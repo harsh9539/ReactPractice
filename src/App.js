@@ -4,9 +4,10 @@
 // import Tracks from "./Components/GDSCWork/Tracks";
 // import FunctionalComp from "./Components/UseContext/FunctionalComp";
 // import DataProvider from "./Components/UseContext/DataContext";
-import CompLogin from "./Components/Login/CompLogin";
-import LoginProvider from "./Components/Login/LoginContext";
-import PageRedux from "./Components/Redux/PageRedux";
+// import CompLogin from "./Components/Login/CompLogin";
+// import LoginProvider from "./Components/Login/LoginContext";
+// import PageRedux from "./Components/Redux/PageRedux";
+import Main from "./Components/ReduxThunk/Main";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       {/* <LoginProvider>
         <CompLogin />
       </LoginProvider> */}
-      <PageRedux/>
+      {/* <PageRedux/> */}
+      <Main/>
     </>
   );
 }
