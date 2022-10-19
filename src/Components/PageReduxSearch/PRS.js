@@ -26,8 +26,8 @@ const PRS = () => {
         setCurrentPage(pageNumber)
     }
 
-    // for searching the items and filter
-    const filteredItems = currentPosts.filter(item=>{
+    // for searching the items or filter
+    const filteredItems = comment.filter(item=>{
         // console.log(item.email);
         return item.email.toLowerCase().includes(query.toLowerCase());
         
