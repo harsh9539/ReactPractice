@@ -9,8 +9,8 @@ const Pagination = ({postsPerPage,totalComments,paginate}) => {
         <nav>
             <ul>
                 {
-                    pageNumbers.map(number=>(
-                        <li>
+                    pageNumbers.map((number,key)=>(
+                        <li key={key}>
                             <a
                             href='!#'
                             onClick={(e)=>paginate(number)}

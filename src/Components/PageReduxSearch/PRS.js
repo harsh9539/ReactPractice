@@ -25,6 +25,13 @@ const PRS = () => {
     const paginate = (pageNumber)=>{
         setCurrentPage(pageNumber)
     }
+
+    // for searching the items and filter
+    const filteredItems = currentPosts.filter(item=>{
+        // console.log(item.email);
+        return item.email.toLowerCase().includes(query.toLowerCase());
+        
+    })
     return (
         <div>
             <div className='div'>
@@ -43,7 +50,8 @@ const PRS = () => {
                     totalComments={comment.length}
                     paginate={paginate}
                     />
-                    <Comments comment={currentPosts}/>
+                    {/* <Comments comment={currentPosts}/> */}
+                    <Comments comment={filteredItems}/>
                     </div>
                 }
             </div>
