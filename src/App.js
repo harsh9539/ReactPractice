@@ -7,7 +7,8 @@
 // import CompLogin from "./Components/Login/CompLogin";
 // import LoginProvider from "./Components/Login/LoginContext";
 // import PageRedux from "./Components/Redux/PageRedux";
-import Mail from "./Components/NodeMailer/Mail";
+// import Mail from "./Components/NodeMailer/Mail";
+import PRS from "./Components/PageReduxSearch/PRS";
 // import Main from "./Components/ReduxThunk/Main";
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
       </LoginProvider> */}
       {/* <PageRedux/> */}
       {/* <Main/> */}
-      <Mail/>
+      {/* <Mail/> */}
+      <PRS/>
     </>
   );
 }

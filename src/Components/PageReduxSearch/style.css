@@ -1,0 +1,42 @@
+.div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    margin: 5px;
+    border: 3px dotted firebrick;
+    padding: 5px;
+}
+nav{
+    margin: 50px;
+}
+ul{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    padding: 10px;
+    border: 1px solid coral;
+}
+li:first-child{
+    border-radius: 10px 0 0 10px;
+}
+li:last-child{
+    border-radius: 0 10px 10px 0;
+}
