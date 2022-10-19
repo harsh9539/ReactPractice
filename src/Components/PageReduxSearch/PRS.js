@@ -27,7 +27,7 @@ const PRS = () => {
     }
 
     // for searching the items or filter
-    const filteredItems = comment.filter(item=>{
+    const filteredItems = currentPosts.filter(item=>{
         // console.log(item.email);
         return item.email.toLowerCase().includes(query.toLowerCase());
         
