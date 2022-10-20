@@ -5,7 +5,7 @@ export const cMail = async (reciverEmail, emailSubject, emailContent) => {
         service: "gmail",
         auth: {
             user: "goyalh862@gmail.com",
-            pass: "axpucmngvzhdjfok",
+            pass: "axpucmngvzhdjfok", //  This password is generated after 2factor auth and then go to app passwords
         },
     });
 
