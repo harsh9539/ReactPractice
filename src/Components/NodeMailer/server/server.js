@@ -21,6 +21,7 @@ app.post("/mail",(req,res)=>{
     res.json({"Success":"GreatJob"})
     try{
     cMail(email,"Testing the NodeMailer is working fine or not",`Hey how are you ${name}. I am your friend from now`);
+    console.log("Email send successfully")
     }
     catch(err){
         console.log(err);

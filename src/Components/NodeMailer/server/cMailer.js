@@ -5,7 +5,7 @@ export const cMail = async (reciverEmail, emailSubject, emailContent) => {
         service: "gmail",
         auth: {
             user: "goyalh862@gmail.com",
-            pass: "Harsh9539@",
+            pass: "axpucmngvzhdjfok",
         },
     });
 
