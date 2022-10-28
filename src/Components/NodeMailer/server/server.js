@@ -1,15 +1,17 @@
 import express from 'express';
 import cors from 'cors';
-import mongoose, { mongo } from "mongoose"
+import dotenv from "dotenv";
+import mongoose from "mongoose"
 import { cMail } from './cMailer.js';
 const app = express();
 import JWT from "jsonwebtoken";
 
+dotenv.config();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }))
 
-mongoose.connect("mongodb+srv://harsh9539:Harsh9539@cluster0.egujj.mongodb.net/JWTDBTEST?retryWrites=true&w=majority").then((res) => console.log("DB connecton is successfull")).catch((err) => console.log(err));
+mongoose.connect(process.env.MONGODB_URL).then((res) => console.log("DB connecton is successfull")).catch((err) => console.log(err));
 
 app.route("/")
     .get((req, res) => {
