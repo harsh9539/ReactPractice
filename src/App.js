@@ -10,6 +10,7 @@
 import Mail from "./Components/NodeMailer/Mail";
 import Callback from "./Components/Hooks/Callback";
 import UseRef from "./Components/Hooks/UseRef";
+import GoogleOAuth from "./Components/GoogleOAuth/GoogleOAuth";
 // import PRS from "./Components/PageReduxSearch/PRS";
 // import Main from "./Components/ReduxThunk/Main";
 
@@ -31,7 +32,8 @@ function App() {
       {/* <Mail/> */}
       {/* <PRS/> */}
       {/* <UseRef/> */}
-      <Callback/>
+      {/* <Callback/> */}
+      <GoogleOAuth/>
     </>
   );
 }
