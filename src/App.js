@@ -8,6 +8,8 @@
 // import LoginProvider from "./Components/Login/LoginContext";
 // import PageRedux from "./Components/Redux/PageRedux";
 import Mail from "./Components/NodeMailer/Mail";
+import Callback from "./Components/Hooks/Callback";
+import UseRef from "./Components/Hooks/UseRef";
 // import PRS from "./Components/PageReduxSearch/PRS";
 // import Main from "./Components/ReduxThunk/Main";
 
@@ -26,8 +28,10 @@ function App() {
       </LoginProvider> */}
       {/* <PageRedux/> */}
       {/* <Main/> */}
-      <Mail/>
+      {/* <Mail/> */}
       {/* <PRS/> */}
+      {/* <UseRef/> */}
+      <Callback/>
     </>
   );
 }
