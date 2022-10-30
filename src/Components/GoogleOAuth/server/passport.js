@@ -3,12 +3,6 @@ const GoogleStrategy = require("passport-google-oauth20").Strategy;
 // const FacebookStrategy = require("passport-facebook").Strategy;
 const passport = require("passport");
 
-const _ID2 = process.env.GOOGLE_CLIENT_ID;
-console.log(_ID2);
-const _ID =
-    "1073647718468-q346qhhd9t3emg7elfuqo3t8m524p847.apps.googleusercontent.com";
-// const GOOGLE_CLIENT_SECRET = "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";
-
 // GITHUB_CLIENT_ID = "your id";
 // GITHUB_CLIENT_SECRET = "your id";
 
@@ -18,8 +12,7 @@ const _ID =
 passport.use(
     new GoogleStrategy(
         {
-            // clientID: process.env.GOOGLE_CLIENT_ID,
-            clientID:_ID,
+            clientID: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
             callbackURL: "/auth/google/callback",
         },

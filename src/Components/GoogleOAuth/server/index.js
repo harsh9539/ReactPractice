@@ -1,4 +1,4 @@
-const dotenv = require("dotenv");
+require("dotenv").config();
 const cookieSession = require("cookie-session");
 const express = require("express");
 const cors = require("cors");
@@ -7,7 +7,6 @@ const passport = require("passport");
 const authRoute = require("./routes/auth");
 const app = express();
 
-dotenv.config();
 
 app.use(
   cookieSession({ name: "session", keys: ["lama"], maxAge: 24 * 60 * 60 * 100 })
