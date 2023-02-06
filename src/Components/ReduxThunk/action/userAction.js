@@ -7,6 +7,7 @@ export const userAction = () => {
         try {
             dispatch({ type: GET_USER_REQUEST });
             const res = await axios.get("https://jsonplaceholder.typicode.com/users");
+            console.log(res.data);
             // direct destructure of data from api
             // const {data} = await axios.get("https://jsonplaceholder.typicode.com/users");
             dispatch({ type: GET_USER_SUCCESS, payload: res.data });

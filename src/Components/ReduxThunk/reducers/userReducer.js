@@ -6,6 +6,7 @@ export const userReducer = (state={users:[]},action)=>{
         case GET_USER_REQUEST:
             return {loading:true,users:[]}
         case GET_USER_SUCCESS:
+            console.log(action)
             return {loading:false,users:action.payload}
         case GET_USER_FAIL:
             return {loading:false,error:action.payload}

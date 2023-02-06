@@ -7,12 +7,14 @@
 // import CompLogin from "./Components/Login/CompLogin";
 // import LoginProvider from "./Components/Login/LoginContext";
 // import PageRedux from "./Components/Redux/PageRedux";
-import Mail from "./Components/NodeMailer/Mail";
-import Callback from "./Components/Hooks/Callback";
-import UseRef from "./Components/Hooks/UseRef";
-import GoogleOAuth from "./Components/GoogleOAuth/GoogleOAuth";
+// import Mail from "./Components/NodeMailer/Mail";
+// import Callback from "./Components/Hooks/Callback";
+// import UseRef from "./Components/Hooks/UseRef";
+// import GoogleOAuth from "./Components/GoogleOAuth/GoogleOAuth";
+// import Test from "./Components/Test";
 // import PRS from "./Components/PageReduxSearch/PRS";
 // import Main from "./Components/ReduxThunk/Main";
+import Main from "./Components/reduxToolkit_/Main";
 
 function App() {
   return (
@@ -28,12 +30,13 @@ function App() {
         <CompLogin />
       </LoginProvider> */}
       {/* <PageRedux/> */}
-      {/* <Main/> */}
+      <Main/>
       {/* <Mail/> */}
       {/* <PRS/> */}
       {/* <UseRef/> */}
       {/* <Callback/> */}
-      <GoogleOAuth/>
+      {/* <GoogleOAuth/> */}
+      {/* <Test/> */}
     </>
   );
 }

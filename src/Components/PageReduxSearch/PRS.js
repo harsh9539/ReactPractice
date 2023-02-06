@@ -6,28 +6,28 @@ import Pagination from './Pagination/Pagination'
 import { fetchComment } from './Redux/action'
 import "./style.css"
 const PRS = () => {
-    const [query,setQuery] = useState("");
-    const [postsPerPage,setPostsPerPage] = useState(100);
+    const [query, setQuery] = useState("");
+    const [postsPerPage, setPostsPerPage] = useState(100);
     const [currentPage, setCurrentPage] = useState(1);
 
     // for fetching the api
     const dispatch = useDispatch();
-    const commentList = useSelector(state=>state.commentReducer);
-    const {loading,comment,error} = commentList;
-    useEffect(()=>{
+    const commentList = useSelector(state => state.commentReducer);
+    const { loading, comment, error } = commentList;
+    useEffect(() => {
         dispatch(fetchComment())
-    },[dispatch])
+    }, [dispatch])
 
     // for slicing the result
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
-    const currentPosts = comment.slice(indexOfFirstPost,indexOfLastPost);
-    const paginate = (pageNumber)=>{
+    const currentPosts = comment.slice(indexOfFirstPost, indexOfLastPost);
+    const paginate = (pageNumber) => {
         setCurrentPage(pageNumber)
     }
 
     // for searching the items or filter
-    const filteredItems = currentPosts.filter(item=>{
+    const filteredItems = currentPosts.filter(item => {
         // console.log(item.email);
         return item.email.toLowerCase().includes(query.toLowerCase());
         
@@ -35,24 +35,24 @@ const PRS = () => {
     return (
         <div>
             <div className='div'>
-                Search: <input onChange={(e)=>setQuery(e.target.value)} placeholder='Search....'/>
+                Search: <input onChange={(e) => setQuery(e.target.value)} placeholder='Search....' />
             </div>
             <div>
                 {
                     loading ?
-                    <h1>Loading....</h1>
-                    :
-                    error ? <h2>{error}</h2>
-                    :
-                    <div>
-                    <Pagination
-                    postsPerPage={postsPerPage}
-                    totalComments={comment.length}
-                    paginate={paginate}
-                    />
-                    {/* <Comments comment={currentPosts}/> */}
-                    <Comments comment={filteredItems}/>
-                    </div>
+                        <h1>Loading....</h1>
+                        :
+                        error ? <h2>{error}</h2>
+                            :
+                            <div>
+                                <Pagination
+                                    postsPerPage={postsPerPage}
+                                    totalComments={comment.length}
+                                    paginate={paginate}
+                                />
+                                {/* <Comments comment={currentPosts}/> */}
+                                <Comments comment={filteredItems} />
+                            </div>
                 }
             </div>
         </div>

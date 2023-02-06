@@ -6,7 +6,10 @@ const rootReducer = combineReducers({
     userList:userReducer
 });
 
-const intialState = {};
+const intialState = {
+    // userList:{loading:false},{users:}
+    userList:{loading:false,users:[{id:1,name:"harsh",username:"goyal"},{id:2,name:"lakshay",username:'goyal'}]}
+};
 
 const middleware = [thunk];
 
