@@ -10,7 +10,7 @@ const Todos = () => {
     dispatch(deleteTodos(id));
   }
   useEffect(() => {
-    // dispatch(fetchTodos());
+    dispatch(fetchTodos());
   }, [])
   return (
     <div>
