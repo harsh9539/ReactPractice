@@ -14,7 +14,8 @@
 // import Test from "./Components/Test";
 // import PRS from "./Components/PageReduxSearch/PRS";
 // import Main from "./Components/ReduxThunk/Main";
-import Main from "./Components/reduxToolkit_/Main";
+
+import Main from "./Components/reduxToolkit__/Main";
 
 function App() {
   return (
