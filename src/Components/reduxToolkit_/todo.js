@@ -9,18 +9,14 @@ export const fetchTodo = createAsyncThunk('fetchTodo',async()=>{
 })
 
 
-const fetchProducts = ()=>{
-    const localData = JSON.parse(localStorage.getItem("todos"));
-    if(localData) return localData;
-    else return [];
-}
+
 
 
 
 
 const initialState = {
     isLoading:false,
-    data:fetchProducts(),
+    data:[],
     isError:false
 }
 
